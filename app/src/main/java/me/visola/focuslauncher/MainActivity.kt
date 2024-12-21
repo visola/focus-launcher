@@ -10,7 +10,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
 import me.visola.focuslauncher.ui.ApplicationInfo
-import me.visola.focuslauncher.ui.ApplicationList
+import me.visola.focuslauncher.ui.Home
 import me.visola.focuslauncher.ui.theme.FocusLauncherTheme
 
 
@@ -36,7 +36,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             FocusLauncherTheme {
                 Scaffold { innerPadding ->
-                    ApplicationList(appList, Modifier.padding(innerPadding))
+                    Home(appList, Modifier.padding(innerPadding))
                 }
             }
         }
