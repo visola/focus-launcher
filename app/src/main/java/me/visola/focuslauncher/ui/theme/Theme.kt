@@ -9,7 +9,7 @@ private val FocusLauncherScheme = darkColorScheme(
     secondary = Grey60,
     tertiary = Grey20,
 
-    background = Grey80,
+    background = Black,
 )
 
 @Composable

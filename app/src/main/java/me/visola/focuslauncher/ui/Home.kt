@@ -11,7 +11,8 @@ fun Home(
     modifier: Modifier = Modifier,
     focusLauncherViewModel: FocusLauncherViewModel = viewModel()
 ) {
-    val favoriteApps = appList.filter { focusLauncherViewModel.favorites.contains(it.packageName) }
-
-    ApplicationList(favoriteApps, modifier = modifier)
+    ApplicationList(
+        appList = appList.filter { focusLauncherViewModel.favorites.contains(it.packageName) },
+        modifier = modifier,
+    )
 }
