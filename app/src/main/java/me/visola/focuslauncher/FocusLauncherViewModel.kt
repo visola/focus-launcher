@@ -14,8 +14,8 @@ class FocusLauncherViewModel(private val favoritesRepository: FavoritesRepositor
         favorites.add(packageName)
     }
 
-    fun removeToFavorites(packageName: String) {
-        favoritesRepository.removeToFavorites(packageName)
+    fun removeFromFavorites(packageName: String) {
+        favoritesRepository.removeFromFavorites(packageName)
         favorites.remove(packageName)
     }
 

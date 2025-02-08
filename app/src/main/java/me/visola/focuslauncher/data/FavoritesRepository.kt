@@ -15,7 +15,7 @@ class FavoritesRepository(val preferences: SharedPreferences) {
         }
     }
 
-    fun removeToFavorites(packageName: String) {
+    fun removeFromFavorites(packageName: String) {
         favorites.remove(packageName)
         with (preferences.edit()) {
             putStringSet(FAVORITES, favorites)

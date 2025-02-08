@@ -53,7 +53,7 @@ fun ApplicationItem(
                 onClick = { context.startActivity(launchIntent) },
                 onLongClick = {
                     if (focusLauncherViewModel.favorites.contains(appInfo.packageName)) {
-                        focusLauncherViewModel.removeToFavorites(appInfo.packageName)
+                        focusLauncherViewModel.removeFromFavorites(appInfo.packageName)
                         Toast.makeText(
                             context,
                             "${appInfo.name} removed from Bookmarks",
